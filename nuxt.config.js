@@ -10,7 +10,8 @@ export default {
    */
   target: "static",
   router: {
-    base: '/DadJokes/'
+    base: "/DadJokes/"
+  },
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
