@@ -3,13 +3,13 @@
     <h1 class="title">Dad Jokes</h1>
     <ul>
       <li>
-        <nuxt-link to='/'>Home</nuxt-link>
+        <nuxt-link to="/">Home</nuxt-link>
       </li>
       <li>
-        <nuxt-link to='/jokes'>Jokes</nuxt-link>
+        <nuxt-link to="/jokes">Jokes</nuxt-link>
       </li>
       <li>
-        <nuxt-link to='/about'>About</nuxt-link>
+        <nuxt-link to="/about">About</nuxt-link>
       </li>
     </ul>
   </header>
@@ -17,25 +17,27 @@
 
 <script>
 export default {
-  name: 'AppHeader'
-}
+  name: "AppHeader"
+};
 </script>
 
 <style>
 .header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 1rem;
-padding-bottom: 1rem;
-border-bottom: 1px dotted #ccc;
+  align-items: center;
+  margin: 1rem auto;
+  padding: 1rem auto;
+  border-bottom: 1px dotted #ccc;
 }
 .header .title {
   font-size: 3rem;
   color: #526488;
+  font-size: 3rem;
+  text-align: center;
 }
 .header ul {
   display: flex;
+  margin: 1rem auto;
+  justify-content: center;
 }
 .header a {
   display: inline-block;
@@ -43,5 +45,15 @@ border-bottom: 1px dotted #ccc;
   color: #fff;
   padding: 0.3rem 1rem;
   margin-right: 0.5rem;
+}
+@media (min-width: 640px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 1rem auto;
+    border-bottom: 1px dotted #ccc;
+  }
 }
 </style>
